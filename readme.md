@@ -1,6 +1,6 @@
 # Front-end Projects
 
-This repository contains all three front-end development projects I completed during my internship at **CodeAlpha**. Each project is a standalone, fully functional web application built with pure HTML, CSS, and JavaScript.
+This repository contains all three front-end development projects. Each project is a standalone, fully functional web application built with pure HTML, CSS, and JavaScript.
 
 ## Preview:
 

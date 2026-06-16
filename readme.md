@@ -16,15 +16,15 @@ This repository contains all three front-end development projects. Each project 
  **Image Gallery** 
  Responsive gallery with lightbox, category filters, hover effects & keyboard navigation 
  
- View Demo: https://codealpha-frontend-intern.vercel.app/Task%201%20Image%20Gallery/
+ View Demo: https://jsp-frontend-projects.vercel.app/Task%201%20Image%20Gallery/
 
 **Calculator** Complete arithmetic calculator with real-time display, keyboard support & clean UI
 
-View Demo: https://codealpha-frontend-intern.vercel.app/Task%202%20Build%20a%20Calci/
+View Demo: https://jsp-frontend-projects.vercel.app/Task%202%20Build%20a%20Calci/
 
 **Music Player** Audio player with playlist, progress bar, volume control, autoplay & keyboard shortcuts 
 
-View Demo: https://codealpha-frontend-intern.vercel.app/Task%204%20Music%20Player/
+View Demo: https://jsp-frontend-projects.vercel.app/Task%204%20Music%20Player/
 
 
 ## 🛠️ Technologies Used

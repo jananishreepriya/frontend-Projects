@@ -2,7 +2,8 @@
 
 This repository contains all three front-end development projects I completed during my internship at **CodeAlpha**. Each project is a standalone, fully functional web application built with pure HTML, CSS, and JavaScript.
 
-Preview:
+## Preview:
+
 <img width="947" height="467" alt="image" src="https://github.com/user-attachments/assets/5c8f76ed-dead-4dc1-8e27-f756b89a454a" />
 
 <img width="944" height="461" alt="image" src="https://github.com/user-attachments/assets/9d14c013-699e-44f9-8a30-9e1da8a24725" />
@@ -36,30 +37,7 @@ No external libraries or frameworks – pure front-end fundamentals.
 
 ## 📁 Repository Structure
 
-codealpha-frontend-intern/
-│
-├── README.md (this file)
-│
-├── Task 1 Image Gallery/
-│ ├── index.html
-│ ├── css/
-│ │ └── style.css
-│ ├── js/
-│   └── script.js
-│
-├── Task 2 Build a Calci/
-│ ├── index.html
-│ ├── css/
-│ │ └── style.css
-│ ├── js/
-│   └── script.js
-│
-└── Task 3 Music Player/
-├── index.html
-├── css/
-│ └── style.css
-├── js/
-  └── script.js
+<img width="107" height="275" alt="image" src="https://github.com/user-attachments/assets/e315347b-f7e8-455c-a8ca-ea291a2980eb" />
 
 
 📝 License

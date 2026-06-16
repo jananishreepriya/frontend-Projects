@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>My Gallery</h1>
+
+    <div class="filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="nature">Nature</button>
+        <button data-filter="city">City</button>
+    </div>
+
+    <!-- All images are right here in HTML -->
+    <div class="gallery" id="gallery">
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature1.jpg" alt="Nature 1">
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature2.jpg" alt="Nature 2">
+        </div>
+        <div class="gallery-item" data-category="city">
+            <img src="images/city1.jpg" alt="City 1">
+        </div>
+        <div class="gallery-item" data-category="city">
+            <img src="images/city2.jpg" alt="City 2">
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="images/nature3.jpg" alt="Nature 3">
+        </div>
+        <div class="gallery-item" data-category="city">
+            <img src="images/city3.jpg" alt="City 3">
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <span id="close">&times;</span>
+        <img id="lightbox-img" src="">
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

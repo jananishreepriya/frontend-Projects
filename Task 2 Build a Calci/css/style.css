@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
+    padding: 1rem;
+}
+
+.calculator {
+    background: rgba(30, 41, 59, 0.9);
+    backdrop-filter: blur(4px);
+    border-radius: 2.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 380px;
+    transition: all 0.2s;
+}
+
+.display {
+    margin-bottom: 1.8rem;
+}
+
+#display {
+    width: 100%;
+    background: #0f172a;
+    border: none;
+    border-radius: 1.8rem;
+    padding: 1.2rem 1.2rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-align: right;
+    color: #f1f5f9;
+    letter-spacing: 1px;
+    box-shadow: inset 0 5px 8px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.05);
+    font-family: 'Monaco', 'Courier New', monospace;
+}
+
+#display:focus {
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+}
+
+.btn {
+    background: #1e293b;
+    border: none;
+    border-radius: 1.2rem;
+    padding: 1.1rem 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    font-family: inherit;
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.operator {
+    background: #f97316;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.operator:active {
+    background: #ea580c;
+}
+
+.equals {
+    background: #3b82f6;
+    color: white;
+    grid-row: span 1;
+}
+
+.equals:active {
+    background: #2563eb;
+}
+
+.clear {
+    background: #ef4444;
+    color: white;
+}
+
+.clear:active {
+    background: #dc2626;
+}
+
+.zero {
+    grid-column: span 1;
+}
+
+.backspace {
+    background: #475569;
+    font-size: 1.3rem;
+}
+
+.decimal {
+    background: #334155;
+}
+
+@media (max-width: 420px) {
+    .calculator {
+        padding: 1rem;
+    }
+    .btn {
+        padding: 0.9rem 0;
+        font-size: 1.2rem;
+    }
+    #display {
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+}

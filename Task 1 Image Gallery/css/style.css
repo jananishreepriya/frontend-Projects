@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #989898;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.filters button {
+    padding: 8px 20px;
+    margin: 5px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.filters .active, .filters button:hover {
+    background: #007bff;
+    color: white;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.gallery-item {
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.gallery-item:hover{
+    border: 2px solid #1f67e4;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+}
+#close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+#prev { left: 20px; }
+#next { right: 20px; }

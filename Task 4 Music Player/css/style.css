@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1e2b 0%, #2a2f3f 100%);
+    font-family: 'Segoe UI', 'Inter', system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.player-container {
+    max-width: 550px;
+    width: 100%;
+}
+
+.player-card {
+    background: rgba(20, 24, 36, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 2rem;
+    padding: 1.8rem;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cover-art {
+    height: 180px;
+    background: radial-gradient(circle at 30% 20%, #3b3f5c, #0f111a);
+    border-radius: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.vinyl {
+    width: 100px;
+    height: 100px;
+    background: #111;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px #2c2f3e, 0 10px 20px black;
+    position: relative;
+}
+.vinyl::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #c0a050;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.cover-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 70% 20%, rgba(255,215,0,0.2), transparent);
+}
+
+.song-info {
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+#song-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color: #f0f3ff;
+}
+#song-artist {
+    color: #a9b2d4;
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.progress-area {
+    margin: 1.5rem 0;
+}
+.progress-bar {
+    background: #2e3348;
+    height: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.progress {
+    background: #f97316;
+    width: 0%;
+    height: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+.time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 0.75rem;
+    color: #9aa2c2;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0 1rem;
+}
+.ctrl-btn {
+    background: #2a2f42;
+    border: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 60px;
+    font-size: 1.5rem;
+    color: #eef2ff;
+    cursor: pointer;
+    transition: 0.1s;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.ctrl-btn:active {
+    transform: scale(0.96);
+}
+.main-play {
+    background: #f97316;
+    width: 64px;
+    height: 64px;
+    font-size: 1.9rem;
+}
+.main-play:hover, .ctrl-btn:hover {
+    filter: brightness(1.1);
+}
+
+.volume-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 1rem 0;
+    color: #cdd5f0;
+}
+#volume {
+    flex: 1;
+    height: 4px;
+    border-radius: 5px;
+    background: #3e445e;
+}
+#autoplay-badge {
+    font-size: 0.7rem;
+    background: #1f253b;
+    padding: 4px 8px;
+    border-radius: 40px;
+}
+
+.playlist {
+    margin-top: 1.2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 0.8rem;
+}
+.playlist h3 {
+    font-size: 1rem;
+    color: #cdd5f0;
+    margin-bottom: 8px;
+}
+#playlist-items {
+    list-style: none;
+    max-height: 180px;
+    overflow-y: auto;
+}
+#playlist-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 6px;
+    margin: 4px 0;
+    background: rgba(45, 50, 70, 0.5);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.1s;
+    color: #ccd6f0;
+}
+#playlist-items li.active {
+    background: #f97316;
+    color: white;
+}
+#playlist-items li:hover {
+    background: #3d4462;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: #262b40;
+}
+::-webkit-scrollbar-thumb {
+    background: #f97316;
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    .player-card {
+        padding: 1.2rem;
+    }
+    .ctrl-btn {
+        width: 44px;
+        height: 44px;
+    }
+    .main-play {
+        width: 56px;
+        height: 56px;
+    }
+}

@@ -1,4 +1,4 @@
-# 🚀 CodeAlpha Front-End Internship – All Tasks
+# Front-end Projects
 
 This repository contains all three front-end development projects I completed during my internship at **CodeAlpha**. Each project is a standalone, fully functional web application built with pure HTML, CSS, and JavaScript.
 
@@ -11,7 +11,7 @@ This repository contains all three front-end development projects I completed du
 <img width="930" height="459" alt="image" src="https://github.com/user-attachments/assets/7494f6ad-3832-4567-83b2-c3aa43e758e2" />
 
 
-## 📂 Projects Overview
+## Projects Overview
 
  **Image Gallery** 
  Responsive gallery with lightbox, category filters, hover effects & keyboard navigation 
@@ -41,5 +41,5 @@ No external libraries or frameworks – pure front-end fundamentals.
 
 
 📝 License
-This repository is part of the CodeAlpha Front-End Internship program and is intended for portfolio and educational purposes.
+This repository is intended for portfolio and educational purposes.
 
